@@ -1,0 +1,69 @@
+html, body {
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+/*body {
+    background-image: url("/media/brain_coronal_flower.png");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center 175px;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+p {
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.75em;
+}
+
+#top-section {
+    padding: 40px 15px;
+}
+
+#name-intro {
+    margin: .75em;
+    margin-left: 15%;
+    float: left;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Override some Bootstrap styling */
+div.header.clearfix {
+    margin: 15px;
+}
+
+.nav a {
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+.nav-pills>li>a:focus, .nav-pills>li>a:hover {
+    color: #29A5FF;
+    background-color: #fff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #000;
+    font-weight: 500;
+    background-color: #fff;
+}
