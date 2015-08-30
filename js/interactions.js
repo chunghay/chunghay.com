@@ -1,15 +1,22 @@
 var image = new Image();
 var canvas = document.getElementById('brain-flower-canvas');
+var yOffset = 55; // Pixels above brain flower image
+
+function resizeCanvas() {
+  canvas.width = Math.max($('#top-image').width(), image.width);
+  canvas.height = image.height + yOffset;
+
+  // Draw the image in the center of the canvas
+  var context = canvas.getContext('2d');
+  var midX = (canvas.width - image.width) / 2;
+  context.drawImage(image, midX, yOffset);
+}
 
 image.onload = function () {
-    var yOffset = 55;
-    canvas.width = $('#top-image').width();
-    canvas.height = image.height + yOffset;
+    resizeCanvas();
 
-    // Draw the image in the center of the canvas
-    var context = canvas.getContext('2d');
-    var midX = (canvas.width - image.width) / 2;
-    context.drawImage(image, midX, yOffset);
+    // Dynamic centering of image.
+    window.addEventListener('resize', resizeCanvas, false);
 };
 image.src = '/media/brain_coronal_flower.png';
 
@@ -38,5 +45,3 @@ $(function() {
       }
   });
 });
-
-// TODO: the brain flower image needs to be re-centered whenever the browser window changes. Make that function.
