@@ -1,7 +1,9 @@
 html, body {
     font-family: 'Fira Sans', Helvetica, sans-serif;
+    font-size: 16px;
     font-weight: 300;
     color: #333;
+    line-height: 1.75em;
 }
 
 /*body {
@@ -21,30 +23,40 @@ h1 {
     font-size: 26px;
 }
 
-p {
-    font-family: 'Fira Sans', Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #333;
-    line-height: 1.75em;
+h2 {
+    font-size: 22px;
 }
 
-#top-section {
-    padding: 40px 15px;
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
 }
 
-#name-intro {
-    margin: .75em;
-    margin-left: 15%;
-    float: left;
+a:hover{
+    color: #29A5FF;
+}
+
+.contact-block {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .footer {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 15px;
     width: 100%;
     text-align: center;
 }
+
+.section {
+    padding: 40px 45px;
+}
+
+#avatar {
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+}
+
 
 /* Override some Bootstrap styling */
 div.header.clearfix {
@@ -66,4 +78,28 @@ div.header.clearfix {
     color: #000;
     font-weight: 500;
     background-color: #fff;
+}
+
+
+/* Add styling to Font Awesome */
+.fa {
+  margin-top: 15px;
+  margin-right: 15px;
+  color: #666;
+}
+
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.fa-pinterest:hover {
+  color: #cb2027;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-linkedin-square:hover {
+  color: #007bb6;
 }
