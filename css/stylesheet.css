@@ -6,13 +6,6 @@ html, body {
     line-height: 1.75em;
 }
 
-/*body {
-    background-image: url("/media/brain_coronal_flower.png");
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: center 175px;
-}*/
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', Helvetica, sans-serif;
     font-weight: 300;
@@ -46,9 +39,20 @@ a:hover{
     width: 100%;
     text-align: center;
 }
+.row {
+  margin-bottom: 40px;
+}
+
+.project-title {
+    font-weight: 500;
+}
 
 .section {
     padding: 40px 45px;
+}
+
+.section-title {
+    margin-bottom: 18px;
 }
 
 #avatar {
@@ -56,11 +60,6 @@ a:hover{
     width: auto;
     height: 110px;
 }
-
-#contact-me-title {
-  margin-bottom: 18px;
-}
-
 
 /* Override some Bootstrap styling */
 div.header.clearfix {
