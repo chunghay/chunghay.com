@@ -35,12 +35,14 @@ a:hover{
 
 .footer {
     /*position: absolute;*/
+    margin-top: 50px;
+    margin-bottom: 10px;
     bottom: 15px;
     width: 100%;
     text-align: center;
 }
 .row {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .project-title {
@@ -48,11 +50,16 @@ a:hover{
 }
 
 .section {
-    padding: 40px 45px;
+    padding: 50px 45px;
 }
 
 .section-title {
+    margin-top: 50px;
     margin-bottom: 18px;
+}
+
+#top-image {
+  margin-bottom: 50px;
 }
 
 #avatar {
