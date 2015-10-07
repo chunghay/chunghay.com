@@ -25,7 +25,7 @@ h3 {
 }
 
 a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:link, a:visited {
@@ -50,7 +50,7 @@ a:hover{
     text-align: center;
 }
 .row {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .project-title {
@@ -70,8 +70,34 @@ a:hover{
     box-shadow: 0px 2px 4px #7F7F7F;
 }
 
+.img-centered-cap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-field {
+    width: 200px;
+}
+
+#home{
+    margin-top: 35px;
+}
+
 #top-image {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#bkgrd-orange {
+    position: relative;
+    width: 120%;
+    height: 350px;
+    overflow: hidden;
+    background-color: rgba(250, 225, 179, 0.1);
+    -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Safari */
+    -moz-transform: rotate(2deg); /* Firefox */
+    -o-transform: rotate(2deg); /* Opera */
+    transform: rotate(2deg);
 }
 
 #avatar {
@@ -80,9 +106,23 @@ a:hover{
     height: 110px;
 }
 
-/* Override some Bootstrap styling */
-div.header.clearfix {
-    margin: 15px;
+/* Overriding or editting some Bootstrap styling */
+#header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 2px 5px #CCCCCC;
+}
+
+.nav>li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nav>li:first-child {
+  margin-left: 45px;
+}
+
+.nav>li:last-child {
+  margin-right: 45px;
 }
 
 .nav a {
@@ -105,22 +145,22 @@ div.header.clearfix {
 
 /* Add styling to Font Awesome */
 .fa {
-  margin-right: 15px;
-  color: #666;
+    margin-right: 15px;
+    color: #666;
 }
 
 .fa-facebook-official:hover {
-  color: #3b5998;
+    color: #3b5998;
 }
 
 .fa-pinterest:hover {
-  color: #cb2027;
+    color: #cb2027;
 }
 
 .fa-twitter:hover {
-  color: #00aced;
+    color: #00aced;
 }
 
 .fa-linkedin-square:hover {
-  color: #007bb6;
+    color: #007bb6;
 }
