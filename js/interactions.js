@@ -45,3 +45,22 @@ $(function() {
       }
   });
 });
+
+
+// The sticky header appears below the home section, so that its appearance on the home section is nice and clean.
+var position = $('#about').position();
+console.log(position);
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 400) { // TODO: Need to fine tune 400 to position.top, which currently is above the "About" text
+    $('#nav-header').addClass('navbar-fixed-top');
+    $('#header').fadeIn(500, function() { // Fading is not working
+      $(this).addClass('header');
+      $(this).addClass('box-shadow');
+    });
+  } else {
+    $('#nav-header').removeClass('navbar-fixed-top');
+    $('#header').fadeIn(500, function() { // Fading is not working
+      $(this).removeClass('box-shadow');
+    });
+  }
+});

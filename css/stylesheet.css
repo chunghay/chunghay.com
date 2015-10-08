@@ -106,10 +106,19 @@ a:hover{
     height: 110px;
 }
 
+#nav-header {
+  top: 0;
+  opacity: 1;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 5px #EEEEEE;
+}
+
 /* Overriding or editting some Bootstrap styling */
 #header {
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0px 2px 5px #CCCCCC;
 }
 
 .nav>li {
@@ -118,7 +127,7 @@ a:hover{
 }
 
 .nav>li:first-child {
-  margin-left: 45px;
+  margin-left: 30px;
 }
 
 .nav>li:last-child {
