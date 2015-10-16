@@ -1,6 +1,7 @@
-html, body {
+/* Refactor this section */
+html, body, div {
     font-family: 'Fira Sans', Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1em; /* 16px */
     font-weight: 300;
     color: #333;
     line-height: 1.75em;
@@ -8,20 +9,20 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 300
     color: #333;
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 1.625em; /* 26px */
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 1.375em; /* 22px */
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em; /* 20px */
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -42,15 +43,8 @@ a:hover{
 }
 
 .footer {
-    /*position: absolute;*/
-    margin-top: 50px;
-    margin-bottom: 10px;
-    bottom: 15px;
     width: 100%;
     text-align: center;
-}
-.row {
-    margin-bottom: 50px;
 }
 
 .project-title {
@@ -62,8 +56,7 @@ a:hover{
 }
 
 .section-title {
-    margin-top: 50px;
-    margin-bottom: 18px;
+    margin-top: 1.125em 0em; /* Different from old version*/
 }
 
 .img-with-shadow {
@@ -73,10 +66,6 @@ a:hover{
 .img-centered-cap {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.text-field {
-    width: 200px;
 }
 
 #home{
@@ -116,39 +105,234 @@ a:hover{
   box-shadow: 0px 2px 5px #EEEEEE;
 }
 
+
+/* Remove from private portfolio css */
+.container-top, .container-bottom {
+  	max-width: 40em;
+  	margin: 0 auto;
+}
+
+.container-top {
+    padding: 4em 1em 1em 1em;
+}
+
+.container-bottom {
+    padding: 1em 1em;
+}
+
+/* Styling for larger screen sizes */
+@media (min-width: 42em)
+{
+  	.header { padding: 1.5em 3em; }
+  	.nav-bar { padding: 1em 3em; }
+    .container-top { padding: 4em 3em 0em 3em; }
+  	.container-bottom { padding: 2em 3em 1em 3em; }
+
+  	.nav li
+  	{
+  		  display: inline;
+  	    margin: 0 1em 0 0;
+  	}
+
+  	.nav a
+  	{
+    		display: inline;
+    		padding: 0;
+    		border-bottom: 0;
+  	}
+}
+
+
+
+
+/* New additions. Remove its old equivalent pieces */
+.container-800 {
+    max-width: 800px;
+  	margin: 0 auto;
+}
+
+.container-90perc {
+    border: 0px solid blue;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thumbnail-container {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0em 3em 3em 3em;
+    max-width: 40em;
+}
+
+.thumbnail-img {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.thumbnail-txt {
+    max-width: 650px;
+    display: inline-block;
+    border: 0px solid red;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.home-txt {
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.right {
+    float: right;
+}
+
+.img-center {
+    text-align: center;
+}
+
+.home-txt > p {
+    position: absolute;
+}
+
+img {
+    max-width: 100%;
+}
+
+#name {
+    margin-top: 4em;
+}
+
+#top-image, #output {
+    margin: 0em 0em;
+}
+
+#home-txt-top {
+    display: block;
+}
+
+#home-txt-bottom {
+    display: none;
+}
+
+#brain-flower-canvas {
+    padding-bottom: 5em;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+/* Styling for smaller screens */
+@media (max-width: 450px) {
+    .home-txt > p {
+        padding: 0em 1em 2em 0em;
+        margin-right: 1em;
+        border-bottom: 1px solid #e3e3e3;
+        text-align: center;
+    }
+
+    .container-800 {
+        margin-top: 2em;
+    }
+
+    #avatar {
+        height: 90px;
+        width: 90px;
+    }
+
+    #home-txt-top {
+        display: none;
+    }
+
+    #home-txt-bottom {
+        display: block;
+    }
+
+    #brain-flower-canvas {
+        padding-bottom: 0em;
+        border-bottom: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-txt > p {
+      position: relative;
+    }
+
+    #name {
+        margin: 0em;
+    }
+
+    .col-xs-4 {
+        max-width: 100%;
+        margin: 0em 1em;
+    }
+
+    .thumbnail-container {
+        border: 0px solid red;
+      /*  padding: 0em 3em 3em 3em;*/
+    }
+}
+
+/* Styling for larger screens */
+@media (min-width: 954px) {
+    .thumbnail-container {
+        max-width: 1200px;
+    }
+
+    .thumbnail-txt {
+        max-width: 30em;
+    }
+}
+
+@media (min-width: 1037px) {
+    .thumbnail-txt {
+        padding-top: 0em;
+    }
+}
+
 /* Overriding or editting some Bootstrap styling */
-#header {
+#nav-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0em 0em;
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+.header {
+    padding: 0em 0em;
+}
+
 .nav>li {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 0.25em 0em;
 }
 
 .nav>li:first-child {
-  margin-left: 30px;
+  margin-left: 0.25em;
 }
 
 .nav>li:last-child {
-  margin-right: 45px;
+  margin-right: 4em;
 }
 
 .nav a {
+    padding: 0em 0em;
     font-family: 'Fira Sans', Helvetica, sans-serif;
     font-weight: 300;
     color: #333;
+
 }
 
 .nav-pills>li>a:focus, .nav-pills>li>a:hover {
     color: #29A5FF;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #000;
     font-weight: 500;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 
