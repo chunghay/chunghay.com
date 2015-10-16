@@ -273,9 +273,10 @@ img {
         margin: 0em;
     }
 
-    .col-xs-4 {
-        max-width: 100%;
-        margin: 0em 1em;
+    #brain-flower-canvas {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
     }
 }
 
