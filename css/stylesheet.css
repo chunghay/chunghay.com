@@ -151,9 +151,8 @@ a:hover{
   	margin: 0 auto;
 }
 
-.container-90perc {
-    border: 0px solid blue;
-    max-width: 90%;
+.container-100perc {
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -254,6 +253,17 @@ img {
     }
 }
 
+@media (max-width: 671px) {
+    .thumbnail-container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .thumbnail-img {
+        padding-right: 0px;
+    }
+}
+
 @media (max-width: 767px) {
     .home-txt > p {
       position: relative;
@@ -267,11 +277,6 @@ img {
         max-width: 100%;
         margin: 0em 1em;
     }
-
-    .thumbnail-container {
-        border: 0px solid red;
-      /*  padding: 0em 3em 3em 3em;*/
-    }
 }
 
 /* Styling for larger screens */
@@ -282,6 +287,7 @@ img {
 
     .thumbnail-txt {
         max-width: 30em;
+        padding-top: 0em;
     }
 }
 
